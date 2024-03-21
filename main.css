@@ -202,3 +202,17 @@ h3{
     text-align: center;
     font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
 }
+
+.animated-space{
+    animation: spaceChange 4s infinite;
+    }
+    
+    @keyframes spaceChange {
+        0%, 100%{
+            font-variation-settings: "wght" 400, "SPAC" 100;
+        }
+        50%{font-variation-settings: "wght" 100, "SPAC" 800;}
+        
+    }
+
+
