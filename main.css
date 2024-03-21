@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'ScienceGothic-BlkCnd';
+    src: url("ScienceGothic-BlkCnd.ttf");
+
+    
+    font-style: normal;
+    font-weight: normal;
+    }
+
+
+@font-face {
+        font-family: 'ScienceGothic-BlkCndCtr';
+        src: url('ScienceGothic-BlkCndCtr.ttf');
+    
+        
+        font-style: normal;
+        font-weight: normal;
+        }
+
+
+@font-face {
+    font-family: 'ScienceGothic-BlkCtr';
+    src: url("ScienceGothic-BlkCtr.ttf");
+        
+            
+    font-style: normal;
+    font-weight: normal;
+            }
+
+@font-face {
+        font-family: 'ScienceGothic-BlkCndCtr';
+        src: url('ScienceGothic-BlkCndCtr.ttf');
+    
+        
+        font-style: normal;
+        font-weight: normal;
+        }
+
+@font-face {
+    font-family: 'ScienceGothic-BlkCtr';
+    src: url("ScienceGothic-BlkCtr.ttf");
+        
+            
+    font-style: normal;
+    font-weight: normal;
+            }
+
+@font-face {
+    font-family: 'ScienceGothic-BlkExpCtr';
+    src: url("ScienceGothic-BlkExpCtr.ttf");
+        
+            
+    font-style: normal;
+    font-weight: normal;
+            }
+
+@font-face {
+    font-family: 'ScienceGothic-CndCtr';
+    src: url("ScienceGothic-CndCtr.ttf");
+        
+            
+    font-style: normal;
+    font-weight: normal;
+            }
+
+@font-face {
+    font-family: 'ScienceGothic-Lt';
+    src: url("ScienceGothic-Lt.ttf");
+        
+            
+    font-style: normal;
+    font-weight: normal;
+            }
+
+@font-face {
+    font-family: 'ScienceGothic-LtCnd';
+    src: url("ScienceGothic-LtCnd.ttf");
+        
+            
+    font-style: normal;
+    font-weight: normal;
+            }
+
+
+
+    
+    body {
+        position: relative;
+    }
+    
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 100vw 100vw; 
+        border-color: transparent transparent #FAA12A #A49083; 
+        z-index: -1; 
+    }
+    .sidebar {
+        position: fixed;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .sidebar li {
+        margin-bottom: 10px;
+    }
+    
+    .sidebar a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+    
+/* how the page wrapper will appear on mobile */
+.page-wrapper {
+    margin-left: 200px; 
+}
+/* how the page wrapper appears on desktop */
+
+@media only screen and (min-width:800px){
+.page-wrapper{
+display: grid;
+grid-gap: 25px;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+grid-template-areas: 
+    "h v"
+    "a a";
+}
+
+.history {
+grid-area: h;
+}
+
+.variations{
+grid-area: v;
+}
+
+.alphabet {
+grid-area: a;
+}
+}
+/* CSS for the footer */
+footer{
+    background-color: gray;
+}
+
+/* variable font animation */
+h3{
+    font-family: 'ScienceGothic-Lt';
+    font-weight:20; 
+    text-align: center;
+    font-size: 5em;
+    animation: weightChange 7s infinite;
+}
+
+@keyframes weightChange {
+    0%, 100%{
+        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+    }
+    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" -13;
+    }
+    
+}
+/* variable font that changes on hover */
+.variable-font{
+    font-family: 'ScienceGothic-Lt';
+    font-weight:1 ;
+    height:100vh;
+    font-size: 10em;
+    display:grid;
+    place-content: center;
+    margin: 0;
+    text-align: center;
+    font-variation-settings: "wght" 40, "wdth" 0, "XXXX" 1;
+    transition: 
+        font-weight 500ms,
+        font-variation-settings 3s;
+}
+
+.variable-font:hover{
+    font-weight:500 ;
+    height:100vh;
+    font-size: 7em;
+    display:grid;
+    place-content: center;
+    margin: 0;
+    text-align: center;
+    font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
+}
