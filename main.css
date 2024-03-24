@@ -1,3 +1,7 @@
+/** {
+    border: 3px dashed blue;
+}*/
+
 @font-face {
     font-family: 'ScienceGothic-BlkCnd';
     src: url("ScienceGothic-BlkCnd.ttf");
@@ -81,11 +85,19 @@
     font-weight: normal;
             }
 
+.cool-title {
+    text-align: center;
+    font-family: 'ScienceGothic-BlkCtr';
+    margin-top: 100px;
+    font-size: 130px;
+}
 
 
     
     body {
         position: relative;
+        background-color: #A49083;
+
     }
     
     body::before {
@@ -203,16 +215,48 @@ h3{
     font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
 }
 
-.animated-space{
-    animation: spaceChange 4s infinite;
-    }
-    
-    @keyframes spaceChange {
-        0%, 100%{
-            font-variation-settings: "wght" 400, "SPAC" 100;
-        }
-        50%{font-variation-settings: "wght" 100, "SPAC" 800;}
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
         
     }
+    
+    .grid {
+       
+        display: grid;
+        grid-template-columns: repeat(3, .005fr);
+        gap: 2px;
+        padding: 2px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px; /* Add margin to create the staircase effect */
+    }
 
+    
+    /* Set grid row for each grid */
+    .lt-cnd {
+        grid-row: 1; /* Place first grid on the first row */
+        font-family: 'ScienceGothic-LtCnd', sans-serif;
+        font-size: 80px;
+    }
+    
+    .lt {
+        grid-row: 2; /* Place second grid on the second row */
+        font-family: 'ScienceGothic-Lt', sans-serif;
+        font-size: 80px;
+    }
 
+    
+    .cnd-ctr {
+        grid-row: 3; /* Place third grid on the third row */
+        font-family: 'ScienceGothic-CndCtr', sans-serif;
+        font-size: 80px;
+    }
+    
+    .blk-ctr {
+        grid-row: 4; /* Place fourth grid on the fourth row */
+        font-family: 'ScienceGothic-BlkCtr', sans-serif;
+        font-size: 80px;
+    }
+    
