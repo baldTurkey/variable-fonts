@@ -204,6 +204,8 @@ h3{
         font-variation-settings 3s;
 }
 
+
+
 .variable-font:hover{
     font-weight:500 ;
     height:100vh;
@@ -220,42 +222,46 @@ h3{
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
-        
+       margin-left: 1120px; 
+     
     }
     
     .grid {
-       
+       grid-gap: 3px;
+       grid-template-rows: auto auto 5px;
+ 
         display: grid;
         grid-template-columns: repeat(3, .005fr);
+        
         gap: 2px;
-        padding: 2px;
-        border: 1px solid #ccc;
-        margin-bottom: 10px; /* Add margin to create the staircase effect */
+        margin-bottom: 10px; 
+        
     }
 
     
     /* Set grid row for each grid */
     .lt-cnd {
-        grid-row: 1; /* Place first grid on the first row */
+        grid-row: 1;
         font-family: 'ScienceGothic-LtCnd', sans-serif;
         font-size: 80px;
+       
     }
     
     .lt {
-        grid-row: 2; /* Place second grid on the second row */
+        grid-row: 2;
         font-family: 'ScienceGothic-Lt', sans-serif;
         font-size: 80px;
     }
 
     
     .cnd-ctr {
-        grid-row: 3; /* Place third grid on the third row */
+        grid-row: 3; 
         font-family: 'ScienceGothic-CndCtr', sans-serif;
         font-size: 80px;
     }
     
     .blk-ctr {
-        grid-row: 4; /* Place fourth grid on the fourth row */
+        grid-row: 4; 
         font-family: 'ScienceGothic-BlkCtr', sans-serif;
         font-size: 80px;
     }
