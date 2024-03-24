@@ -218,6 +218,18 @@ h3{
 }
 
 
+.image {
+    position:absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 850px; /* Adjust the width as needed */
+    margin-top: 90px;
+    
+    /* Add any other styles for the image */
+}
+
+
 
     .grid-container {
         display: grid;
