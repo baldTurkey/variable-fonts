@@ -85,6 +85,7 @@
     font-weight: normal;
             }
 
+
 .cool-title {
     text-align: center;
     font-family: 'ScienceGothic-BlkCtr';
@@ -171,21 +172,8 @@ footer{
     background-color: gray;
 }
 
-/* variable font animation */
-h3{
-    font-family: 'ScienceGothic-Lt';
-    font-weight:20; 
-    text-align: center;
-    font-size: 5em;
-    animation: weightChange 7s infinite;
-}
 
-@keyframes weightChange {
-    0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
-    }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" -13;
-    }
+
     
 }
 /* variable font that changes on hover */
@@ -193,7 +181,7 @@ h3{
     font-family: 'ScienceGothic-Lt';
     font-weight:1 ;
     height:100vh;
-    font-size: 10em;
+    font-size: 150px;
     display:grid;
     place-content: center;
     margin: 0;
@@ -209,7 +197,7 @@ h3{
 .variable-font:hover{
     font-weight:500 ;
     height:100vh;
-    font-size: 7em;
+    font-size: 50px;
     display:grid;
     place-content: center;
     margin: 0;
@@ -276,5 +264,10 @@ h3{
         grid-row: 4; 
         font-family: 'ScienceGothic-BlkCtr', sans-serif;
         font-size: 80px;
+    }
+
+    h1 {
+        font-family: 'ScienceGothic-BlkCndCtr';
+        font-size: 0px;
     }
     
