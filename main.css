@@ -194,17 +194,6 @@ footer{
 
 
 
-.image {
-    position:absolute;
-    z-index: -1;
-    left: 0;
-    top: 0;
-    width: 850px; /* Adjust the width as needed */
-    margin-top: 90px;
-    
-    /* Add any other styles for the image */
-}
-
 
 
     .grid-container {
@@ -216,8 +205,8 @@ footer{
     }
     
     .grid {
-        display: inline-grid; /* Use inline-grid instead of grid */
-        grid-auto-flow: column; /* Make grid items flow in columns */
+        display: inline-grid; 
+        grid-auto-flow: column; 
         grid-gap: 3px;
         margin-bottom: 10px;
         font-size: 80px;
@@ -227,7 +216,7 @@ footer{
     
 
     
-    /* Set grid row for each grid */
+    
     .lt-cnd {
         grid-row: 1;
         font-family: 'ScienceGothic-LtCnd', sans-serif;
@@ -256,32 +245,62 @@ footer{
       
     }
 
-    .lt-cnd2 {
-        grid-row: 1;
-        font-family: 'ScienceGothic-LtCnd', sans-serif;
-       
-       
-    }
-    
-    .lt2 {
-        grid-row: 2;
-        font-family: 'ScienceGothic-Lt', sans-serif;
-        font-weight: bold;
-       
-    }
-
-    .cnd-ctr2 {
-        grid-row: 3; 
-        font-family: 'ScienceGothic-CndCtr', sans-serif;
    
+@keyframes extendText {
+    from {
+      letter-spacing: normal;
     }
-    
-    .blk-ctr2 {
-        grid-row: 4; 
-        font-family: 'ScienceGothic-BlkCtr', sans-serif;
-    
+    to {
+      letter-spacing: 2em; 
     }
+  }
+  
+  
+  @keyframes shrinkText {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.8); 
+    }
+  }
+  
+  
+  @keyframes flipHorizontal {
+    from {
+      transform: scaleX(1);
+    }
+    to {
+      transform: scaleX(-1);
+    }
+  }
 
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(120deg);
+    }
+  }
+  
+  
+  .lt-cnd:hover {
+    animation: extendText 0.3s ease forwards;
+  }
+  
+  .lt:hover {
+    animation: shrinkText 0.3s ease forwards;
+  }
+  
+  .cnd-ctr:hover {
+    animation: rotate 0.3s ease forwards;
+  }
+  
+  .blk-ctr:hover {
+    animation: flipHorizontal 0.3s ease forwards; 
+  }
+  
     h1 {
         font-family: 'ScienceGothic-BlkCndCtr';
         font-size: 45px;
