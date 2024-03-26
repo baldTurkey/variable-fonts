@@ -11,7 +11,7 @@ weightSlider.addEventListener('input', function() {
         variableText.style.fontWeight = ((this.value / midpoint) * 700) + 200; 
     } else {
         console.log("Using ScienceGothic-Blk");
-        variableText.style.fontFamily = 'ScienceGothic-BlkCnd';
+        variableText.style.fontFamily = 'ScienceGothic-BlkCtr';
         variableText.style.fontWeight = (((this.value - midpoint) / midpoint) * 700) + 900; 
     }
 });
