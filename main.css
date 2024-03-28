@@ -283,7 +283,7 @@ footer{
       transform: rotate(120deg);
     }
   }
-  
+ 
   
   .lt-cnd:hover {
     animation: extendText 0.3s ease forwards;
